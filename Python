@@ -1,0 +1,8 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        start = 0
+        while 1:
+            for pos,i in enumerate(nums[start+1:]):
+                if nums[start]+i == target:
+                    return [start,start+1+pos]
+            start+=1
